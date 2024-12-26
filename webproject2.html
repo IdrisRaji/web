@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #fab;
+      }
+      .container {
+        background-color: white;
+        width: 750px;
+        height: 500px;
+        margin-left: 250px;
+        margin-top: 40px;
+        font-weight: bold;
+        display: block;
+      }
+      .container>#boxA {
+        /* text-align: cente;
+            position: relativ; */
+        /* justify-content: center; */
+        /* display: inline; */
+        
+        margin-left: 300px;
+        padding-top: 30px;
+             }
+     .container #boxA h2 {
+        text-align: center;
+        margin-top: 50px;
+        display: inline;
+      }
+     .container #boxA p {
+        text-align: center;
+        position: relative;
+        display: inline;
+        margin-left: 15px;
+        margin-top: 50px;
+      }
+      .container> #boxB{
+        margin-left: 80px;
+        margin-top: 40px;
+      }
+      .container>#boxC{
+        margin-top: 40px;
+        margin-left: 130px;
+      }
+      input{margin-left: 40px;}
+    
+       
+      span{
+        color: red;
+      }
+      #boxD{
+        margin-left: 80px;
+        margin-top: 40px;
+        position: relative;
+        display: inline-block;
+        
+      }
+      .radio{
+        width: 130px;
+        height: 30px;
+        border-radius: 11%;
+        text-align: center;
+        background-color: #aaa;
+        position: absolute;
+        display: block;
+        margin-left: 0px;
+        border: 1.5px solid grey;
+        
+      }
+      #boxE{
+        margin-left: 160px;
+        margin-top: 0px;
+        position: relative;
+        display:inline-block ;
+        align-items: center;
+
+      }
+      #boxF{
+        margin-left: 120px;
+        margin-top: 0px;
+        position: relative;
+        display:inline-block ;
+        align-items: center;
+
+      }
+      #boxG{
+        margin-top: 160px;
+        margin-left: 500px;
+        border-radius: 8px;
+        border-color: rgb(255, 56, 80);
+      }
+      #cancel{
+        width: 90px;
+        height: 30px;
+        border-radius: 8%;
+        border-color: rgb(255, 56, 80);
+        color: rgb(255, 56, 80);
+        font-weight: bold;
+      }
+      #save{
+        background-color: blue;
+        color: aliceblue;
+        width: 90px;
+        font-weight: bold;
+        height: 30px;
+        border-radius: 8%;
+        border-color: blue;
+        margin-left: 8px;
+      }
+      #wkday{
+        width: 140px;
+        height: 35px;
+        border: 1.5px solid grey;
+        font-weight: normal;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="boxA">
+        <h2>Project 1</h2>
+        <p>Report 1</p>
+      </div>
+      <div id="boxB">
+        <h2>Schedule Reminder(s)</h2>
+      </div>
+      <div id="boxC">
+        <label for="frequency">Frequency <span>*</span></label>
+        <label for="frequency">
+            <input type="radio" name="frequency" value="day" id="day" /> Day
+          </label>
+          <label for="frequency">
+            <input type="radio" name="frequency" value="Weekly" id="Weekly" />
+            Weekly
+          </label>
+          <label for="frequency">
+            <input
+              type="radio"
+              name="frequency"
+              value="Monthly"
+              checked
+              id="Monthly"
+            />Monthly </label
+          ><br /><br /><br />
+      </div>
+      <div id="boxD">
+        <label for="date"> Date <span>*</span>
+           <input type="number" name="" value="1" class="radio">
+        </label>       
+
+               <div id="boxE">
+            <label for="weekday">
+                Week Day <span >*</span> </label>
+                <select name="week" id="wkday" aria-placeholder="Monday" class="radio" style="background-color: #aaa;">
+                  <option value="monday">Monday</option>
+                  <option value="tuesday">Tuesday</option>
+                  <option value="Wednesday">Wednesday</option>
+                  <option value="Thusday">Thursday</option>
+                  <option value="Friday">Friday</option>
+                  <option value="Saturday">Saturday</option>
+                  <option value="Sunday">Sunday</option>
+                </select>
+                
+              
+      
+          </div>
+
+
+          <div id="boxF">
+            <label for="time">Time <span>*</span>
+            <input type="number" class="radio" value="12:00 AM" placeholder="12:00 AM"></label>
+          </div>
+      </div>
+     
+      <div id="boxG">
+        <button type="button" class="btn" id="cancel">Cancel</button>
+        <button type="button" class="btn" id="save"> Save</button>
+      </div>
+    </div>
+  </body>
+</html>
